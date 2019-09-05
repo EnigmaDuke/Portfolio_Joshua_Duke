@@ -1,0 +1,148 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/* a{
+  color:;
+} */
+
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:steelblue;
+}
+
+a:hover{
+color:slategrey;
+}
+
+header{
+  width:100%;
+  height:100vh;
+  background-color:#d6d6d6;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image:url(../images/bckgrnd.jpg);
+  background-size:cover;
+  background-repeat:no-repeat; */
+}
+
+h1{
+  font-size:4.5rem;
+}
+
+#header_container{
+  width:60%;
+  /* height:auto; */
+  margin:0 auto;
+  /* background-color:red; */
+}
+
+ul{
+  list-style-type: none;
+  margin:20px 0;
+}
+
+li{
+  display: inline;
+  margin:0 25px;
+  text-transform: uppercase
+}
+
+li a{
+  font-size:1.2rem;
+  letter-spacing: 2px;
+  margin:0 12px;
+}
+
+.fa-github, .fa-linkedin-in{
+  padding:5px;
+  border-radius:10px;
+  transition:all 0.5s;
+}
+
+.fa-github{
+  color:#000;
+  background-color:#fff;
+}
+
+.fa-github:hover{
+  color:#fff;
+  background-color:#000;
+}
+
+.fa-linkedin-in{
+  background-color:#0077B5;
+  color:#fff;
+}
+
+.fa-linkedin-in:hover{
+  color:#0077B5;
+  background-color:#fff;
+}
+
+#about p{
+  font-size:1.2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  padding-top:20px;
+}
+
+#bounce{
+  color:#fff;
+  cursor:pointer;
+  position: relative;
+  top:50px;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration:1s;
+  animation-name:bounce;
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-5px);}
+}
+
+/* Code for main */
+
+#portfolio{
+  width:100%;
+  height:100vh;
+}
+
+h2{
+  text-align: center;
+}
+
+#portfolio_Container{
+  width:100%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:40% 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project{
+  margin:0 auto;
+  height:300px;
+  background-color:red;
+  margin:10px;
+}
+
+img{
+  max-width: 100%;
+  max-height:100%;
+}
+
