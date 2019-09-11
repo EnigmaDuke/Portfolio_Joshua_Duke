@@ -49,6 +49,11 @@
 /* Phone Size */
 @media only screen and (max-width: 500px)
 {
+
+  body{
+    background-color:red;
+  }
+
   h1{
     font-size:2.5rem;
   }
@@ -63,5 +68,14 @@
   }
   #header_container{
     width:100%;
+  }
+
+  #portfolio_Container{
+    display: inline-block;
+  }
+
+  .project{
+    margin:20px auto;
+    width:350px;
   }
 }

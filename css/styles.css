@@ -1,3 +1,11 @@
+:root {
+  --main-bg:#363538;
+  --secondary-bg:#8D8C8A;
+  --eggshell:#f6f6f6;
+  --blue-green:#408697;
+  --accent-blue:#52d6f4;
+}
+
 *{
   margin:0;
   padding:0;
@@ -9,21 +17,23 @@
 
 body{
   font-family: sans-serif;
+  background-color:var(--main-bg);
 }
 
 a{
   text-decoration: none;
-  color:steelblue;
+  color:var(--accent-blue);
+  transition: all 0.5s;
 }
 
 a:hover{
-color:slategrey;
+color:var(--eggshell);
+text-decoration: none;
 }
 
 header{
   width:100%;
   height:100vh;
-  background-color:#d6d6d6;
   text-align: center;
   display:flex;
   align-items: center;
@@ -35,6 +45,12 @@ header{
 
 h1{
   font-size:4.5rem;
+  color:var(--secondary-bg);
+}
+
+h2{
+  color:var(--accent-blue);
+  padding-top:40px;
 }
 
 #header_container{
@@ -62,29 +78,31 @@ li a{
 }
 
 .fa-github, .fa-linkedin-in{
-  padding:5px;
-  border-radius:10px;
+  padding:10px 4px 10px 6px;
+  border-radius:7px;
   transition:all 0.5s;
 }
 
 .fa-github{
-  color:#000;
-  background-color:#fff;
+  color:#fff;
+  border:1px solid #fff;
 }
 
 .fa-github:hover{
   color:#fff;
   background-color:#000;
+  border:none;
 }
 
 .fa-linkedin-in{
-  background-color:#0077B5;
   color:#fff;
+  border:1px solid #fff;
 }
 
 .fa-linkedin-in:hover{
-  color:#0077B5;
-  background-color:#fff;
+  background-color:#0077B5;
+  color:#fff;
+  border:none;
 }
 
 #about p{
@@ -94,10 +112,11 @@ li a{
   letter-spacing: 1px;
   word-spacing: 10px;
   padding-top:20px;
+  color:var(--secondary-bg);
 }
 
 #bounce{
-  color:#fff;
+  color:var(--eggshell);
   cursor:pointer;
   position: relative;
   top:50px;
@@ -119,6 +138,7 @@ li a{
 #portfolio{
   width:100%;
   height:100vh;
+  /* background-color: #BCBCBC */
 }
 
 h2{
@@ -127,22 +147,173 @@ h2{
 
 #portfolio_Container{
   width:100%;
+  height:auto;
   margin:0 auto;
   display:grid;
-  grid-template-columns:40% 40%;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
   justify-content: center;
+  border-radius:5px;
+  position: relative;
 }
 
-.project{
+#portfolio_Container img{
+  width:500px;
+} 
+
+/* .project{
+  background-color: var(--secondary-bg);
+  border:1px solid #fff;
   margin:0 auto;
-  height:300px;
-  background-color:red;
+  width:300px;
+  height:400px;
   margin:10px;
+  padding:10px;
+  box-shadow:0 0 3px var(--accent-blue);
+} */
+
+.project{
+  width:300px;
+  height:139px;
+  overflow:hidden;
+  /* box-shadow:8px 8px 6px 8px #888888; */
+  border-radius:10px;
+  transition:all 0.5s;
+  border:solid 4px yellow;
+  /* position: relative; */
+
+}
+
+#portfolio_Container img{
+  width:300px;
+  height:139px;
+}
+
+.box1, .box2, .box3, .box4{
+  position: absolute;
+  top:150px;
+}
+
+.box1{
+  left:50px;
+}
+
+.box2{
+  left:370px;
+}
+
+.box3{
+  left:690px;
+}
+
+.box4{
+  left:1010px;
+}
+
+.cont1{
+  width:300px;
+  height:400px;
+  position: absolute;
+  top:0px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+  z-index:100;
+}
+
+.cont2{
+  width:300px;
+  height:145px;
+  position:absolute;
+  top:75px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+  padding:5px;
+  margin-top:25px;
+  color:whitesmoke;
+}
+
+.box1:hover .cont1, .box2:hover .cont1{
+  height:139px;
+  top:0;
+}
+
+.box1:hover .cont2, .box2:hover .cont2{
+  top:115px;
+  background-color: #000;
+}
+
+.box1:hover, .box2:hover{
+  width:300px;
+  height:304px;
+  /* top:50px; */
+}
+
+.title{
+  text-align: center;
+}
+
+.project p{
+  line-height: 1.4rem;
+  color:var(--eggshell);
+  letter-spacing: 1px;
+  padding:0 5px;
+  font-family: sans-serif;
 }
 
 img{
   max-width: 100%;
   max-height:100%;
+}
+
+.viewCode {
+  width:100%;
+  display: inline-block;
+  background-color:var(--blue-green);
+  border-radius: 5px;
+  text-align: center;
+  padding:5px;
+  margin:15px 0 ;
+  transition: all 0.5s;
+}
+
+.viewCode:hover{
+  background-color:var(--accent-blue);
+}
+
+.viewCode:hover i{
+  color:var(--eggshell);
+}
+
+.viewCode i{
+  color:var(--main-bg);
+  transition:all 0.5s;
+}
+
+
+/*  Contact */
+
+#contact{
+  width:100%;
+  height:100vh;
+  text-align:center;
+  line-height:2rem;
+}
+
+#contact p{
+  color:var(--eggshell);
+  font-size:1.3rem;
+  text-align:center;
+}
+
+#contact a{
+  font-size:1.4rem;
+}
+
+form{
+  width:80%;
+  height:auto;
+  margin:0 auto;
+  background-color:red;
 }
 
