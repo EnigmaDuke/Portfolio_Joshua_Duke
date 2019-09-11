@@ -176,13 +176,11 @@ h2{
 .project{
   width:300px;
   height:139px;
+  /* height:400px; */
   overflow:hidden;
-  /* box-shadow:8px 8px 6px 8px #888888; */
   border-radius:10px;
   transition:all 0.5s;
-  border:solid 4px yellow;
-  /* position: relative; */
-
+  border:solid 1px yellow;
 }
 
 #portfolio_Container img{
@@ -190,9 +188,35 @@ h2{
   height:139px;
 }
 
+.title{
+  text-align: center;
+}
+
+.cont1{
+  width:300px;
+  height:400px;
+  position: absolute;
+  top:0px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+  z-index:100;
+}
+
+/*  View code div */
+.cont2{
+  width:300px;
+  height:145px;
+  position:absolute;
+  top:75px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+  margin-top:25px;
+  color:whitesmoke;
+}
+
 .box1, .box2, .box3, .box4{
   position: absolute;
-  top:150px;
+  top:100px;
 }
 
 .box1{
@@ -211,47 +235,22 @@ h2{
   left:1010px;
 }
 
-.cont1{
-  width:300px;
-  height:400px;
-  position: absolute;
-  top:0px;
-  box-sizing: border-box;
-  transition:all 0.5s;
-  z-index:100;
-}
-
-.cont2{
-  width:300px;
-  height:145px;
-  position:absolute;
-  top:75px;
-  box-sizing: border-box;
-  transition:all 0.5s;
-  padding:5px;
-  margin-top:25px;
-  color:whitesmoke;
-}
-
-.box1:hover .cont1, .box2:hover .cont1{
+.box1:hover .cont1, .box2:hover .cont1, .box3:hover .cont1, .box4:hover .cont1{
   height:139px;
   top:0;
 }
 
-.box1:hover .cont2, .box2:hover .cont2{
+.box1:hover .cont2, .box2:hover .cont2, .box3:hover .cont2, .box4:hover .cont2{
   top:115px;
   background-color: #000;
 }
 
-.box1:hover, .box2:hover{
+.box1:hover, .box2:hover, .box3:hover, .box4:hover{
   width:300px;
-  height:304px;
+  height:400px;
   /* top:50px; */
 }
 
-.title{
-  text-align: center;
-}
 
 .project p{
   line-height: 1.4rem;
@@ -273,7 +272,7 @@ img{
   border-radius: 5px;
   text-align: center;
   padding:5px;
-  margin:15px 0 ;
+  margin:5px 0;
   transition: all 0.5s;
 }
 
