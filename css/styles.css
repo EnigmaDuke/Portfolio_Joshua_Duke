@@ -134,6 +134,67 @@ li a{
 }
 
 /* Code for main */
+main{
+  width:100%;
+  height:100vh;
+}
+
+#proj_container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.container{
+  width:400px;
+  height:400px;
+  padding:0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+#img1{
+  width:400px;
+  height:400px;
+  background-image: url(../images/superHeroGame.png);
+  /* filter:grayscale(100%) */
+}
+
+#img2{
+  width:400px;
+  height:400px;
+  background-image: url(../images/wedding.png);
+}
+
+.imgs{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius:5px;
+}
+
+
+/* #cont1{
+  width:600px;
+  height:278px;
+  background-image: url(../images/superHeroGame.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: ;
+}
+
+#cont2{
+  width:600px;
+  height:350px;
+  background-image: url(../images/wedding.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: ;
+} */
+
+/* Test 2 ends here */
 
 #portfolio{
   width:100%;
@@ -150,7 +211,7 @@ h2{
   height:auto;
   margin:0 auto;
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr;
   align-items: center;
   justify-items: center;
   justify-content: center;
