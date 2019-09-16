@@ -136,7 +136,7 @@ li a{
 /* Code for main */
 main{
   width:100%;
-  height:100vh;
+  /* height:100vh; */
 }
 
 #proj_container{
@@ -151,6 +151,7 @@ main{
   padding:0;
   border-radius: 5px;
   box-shadow: 2px 2px 5px #000;
+  position: relative;
 }
 
 #img1{
@@ -198,7 +199,7 @@ main{
 
 #portfolio{
   width:100%;
-  height:100vh;
+  /* height:100vh; */
   /* background-color: #BCBCBC */
 }
 
@@ -222,27 +223,6 @@ h2{
 #portfolio_Container img{
   width:500px;
 } 
-
-/* .project{
-  background-color: var(--secondary-bg);
-  border:1px solid #fff;
-  margin:0 auto;
-  width:300px;
-  height:400px;
-  margin:10px;
-  padding:10px;
-  box-shadow:0 0 3px var(--accent-blue);
-} */
-
-.project{
-  width:300px;
-  height:139px;
-  /* height:400px; */
-  overflow:hidden;
-  border-radius:10px;
-  transition:all 0.5s;
-  border:solid 1px yellow;
-}
 
 #portfolio_Container img{
   width:300px;
@@ -275,50 +255,20 @@ h2{
   color:whitesmoke;
 }
 
-.box1, .box2, .box3, .box4{
+#projects{
+  width:100%;
+  display: inline-block;
   position: absolute;
-  top:100px;
+  bottom:0;
+  right:0;
 }
 
-.box1{
-  left:50px;
-}
-
-.box2{
-  left:370px;
-}
-
-.box3{
-  left:690px;
-}
-
-.box4{
-  left:1010px;
-}
-
-.box1:hover .cont1, .box2:hover .cont1, .box3:hover .cont1, .box4:hover .cont1{
-  height:139px;
-  top:0;
-}
-
-.box1:hover .cont2, .box2:hover .cont2, .box3:hover .cont2, .box4:hover .cont2{
-  top:115px;
-  background-color: #000;
-}
-
-.box1:hover, .box2:hover, .box3:hover, .box4:hover{
-  width:300px;
-  height:400px;
-  /* top:50px; */
-}
-
-
-.project p{
-  line-height: 1.4rem;
-  color:var(--eggshell);
-  letter-spacing: 1px;
-  padding:0 5px;
-  font-family: sans-serif;
+.view_proj{
+  width:100%;
+  height:40px;
+  background-color:red;
+  color:#fff;
+  margin:5px 0;
 }
 
 img{
@@ -355,7 +305,7 @@ img{
 
 #contact{
   width:100%;
-  height:100vh;
+  /* height:100vh; */
   text-align:center;
   line-height:2rem;
 }
@@ -377,3 +327,18 @@ form{
   background-color:red;
 }
 
+footer{
+  width:100%;
+  background-color:#000;
+}
+
+.footer_container{
+  width:60%;
+  margin:0 auto;
+  text-align: center;
+}
+
+footer p{
+  margin:0;
+  color:#fff;
+}
