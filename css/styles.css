@@ -265,10 +265,24 @@ h2{
 
 .view_proj{
   width:100%;
-  height:40px;
-  background-color:red;
+  display: inline-block;
+  padding:10px 0;
+  font-size:0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color:var(--secondary-bg);
   color:#fff;
   margin:5px 0;
+}
+
+.view_proj:hover{
+  background-color: var(--main-bg);
+  color:var(--accent-blue);
+}
+
+.view_proj p{
+  margin:0;
+  text-align: center;
 }
 
 img{
