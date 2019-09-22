@@ -142,6 +142,25 @@ li a{
   text-align:center;
 }
 
+.view_code a{
+  width:100%;
+  display: inline-block;
+  text-align: center;
+  margin:10px 0;
+  color:#fff;
+  background-color:var(--main-bg);
+}
+
+.view_code a:hover{
+  background-color:var(--accent-blue);
+  color:var(--main-bg);
+}
+
+.view_code p{
+  margin:0;
+  padding:10px 0;
+}
+
 /*  Contact */
 
 #contact{
