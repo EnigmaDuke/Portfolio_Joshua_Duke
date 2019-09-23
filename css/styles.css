@@ -221,6 +221,9 @@ textarea{
   color:var(--accent-blue);
 }
 
+.form-control:focus {
+  outline: none;
+}
 /* Footer */
 
 footer{
