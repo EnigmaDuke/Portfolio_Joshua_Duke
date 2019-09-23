@@ -180,6 +180,12 @@ li a{
 }
 
 /*  Contact */
+#contact{
+  text-align: center;
+  height:100vh;
+  font-size:2rem;
+}
+
 #contact p{
   color:var(--eggshell);
 }
