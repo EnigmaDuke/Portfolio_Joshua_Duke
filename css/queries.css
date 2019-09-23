@@ -16,66 +16,28 @@
 
 }
 
-/* Tablet */
-@media only screen and (max-width: 800px)
+/* Phone Size */
+@media only screen and (max-width: 1000px)
 {
-  body{
-    background-color:blue;
-  }
   h1{
     font-size:3rem;
-    letter-spacing: 4px;
-    word-spacing:5px;
   }
-
-  li{
-    margin:0 5px;
-  }
-
-  li a{
-    margin:0;
-    font-size:1.1rem;
-  }
-
-  #header_container{
-    width:100%;
-  }
-
-  #about p{
-    letter-spacing: 3px;
-  }
-}
-
-/* Phone Size */
-@media only screen and (max-width: 500px)
-{
-
-  body{
-    background-color:red;
-  }
-
-  h1{
-    font-size:2.5rem;
-  }
-
-  li a{
-    font-size:1rem;
-    margin:0;
-  }
-
   ul{
-    margin:20px 0;
-  }
-  #header_container{
     width:100%;
   }
-
-  #portfolio_Container{
-    display: inline-block;
+  li{
+    margin:0;
   }
 
-  .project{
-    margin:20px auto;
-    width:350px;
+  li a{
+    font-size:0.6rem;
+  }
+  #about p{
+    font-size:1rem;
+  }
+
+  #contact h3{
+    font-size:1.3rem;
+    line-height: 2rem;
   }
 }

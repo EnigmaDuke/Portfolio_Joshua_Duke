@@ -240,6 +240,21 @@ footer .fa-github{
   color:#000;
 }
 
+footer .fa-github:hover{
+  border:1px solid #fff;
+}
+
+footer .fa-linkedin-in{
+  background-color:#0077B5;
+  color:#fff;
+}
+
+footer .fa-linkedin-in:hover{
+  background-color:#fff;
+  color:#0077B5;
+  border:1px solid #fff;
+}
+
 footer p{
   margin:0;
   padding:10px;
