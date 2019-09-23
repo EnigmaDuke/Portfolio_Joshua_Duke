@@ -16,7 +16,6 @@
 } */
 
 body{
-  font-family: sans-serif;
   background-color:var(--main-bg);
 }
 
@@ -44,8 +43,19 @@ header{
 }
 
 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1{
   font-size:4.5rem;
   color:var(--secondary-bg);
+  text-shadow:0 1px 3px #fff;
 }
 
 h2{
@@ -116,6 +126,7 @@ li a{
   word-spacing: 10px;
   padding-top:20px;
   color:var(--secondary-bg);
+  text-shadow:0 1px 1px #fff;
 }
 
 #bounce{
@@ -197,6 +208,19 @@ textarea{
 #contact #required{
   color:red;
 }
+
+#submit{
+  padding:8px;
+  border-radius:3px;
+  transition: 0.4s;
+}
+
+#submit:hover{
+  background-color:var(--blue-green);
+  color:var(--accent-blue);
+}
+
+/* Footer */
 
 footer{
   width:100%;
