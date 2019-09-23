@@ -264,3 +264,8 @@ footer p{
   padding:10px;
   color:#fff;
 }
+
+
+#error p{
+  color:#000;
+}

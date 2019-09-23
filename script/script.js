@@ -11,24 +11,23 @@ $("form").submit(function (e){
   var error = "";
 
   if ($("#name").val() == ""){
-    error += "<p>The name field is required!</p>";
+    error += "The name field is required!</br>";
   }
 
   if ($("#email").val() == ""){
-    error += "<p>The Email field is required!</p>";
+    error += "The Email field is required!</br>";
   }
 
   if ($("#message").val() == ""){
-    error += "<p>A Message is required!</p>";
+    error += "A Message is required!</br>";
   }
 
-  $("#error").html(error);
+  if (error != ""){
+    $("#error").html('<div class="alert alert-danger" role="alert"> <strong>There are errors in the form:</strong></br>' + error + '</div>');
+  } else {
+      $("form").unbind("submit").submit();
+  }
 });
-
-
-
-
-
 
 /* Smooth Scroll */
 $("a[href*='#']").click(function(e) {
